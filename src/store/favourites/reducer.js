@@ -1,11 +1,11 @@
 export const initialState = {
   newsList: [
     {
-      id: "1",
-      title: "Test News 1",
-      description: "Testing News favourites",
+      id: "",
+      title: "",
+      description: "",
       thumbnail:
-        "https://ih1.redbubble.net/image.2349951308.0354/pp,840x830-pad,1000x1000,f8f8f8.jpg",
+        "",
     },
   ],
 };
