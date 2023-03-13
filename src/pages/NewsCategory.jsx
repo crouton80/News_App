@@ -6,6 +6,7 @@ import { useFetch } from "../utils/hooks/useFetch";
 import { getNewsCategoriesEndpoint } from "../api/endpoints";
 import { getNewsList } from "../api/adaptors";
 import NewsCardList from "../components/NewsCardList";
+import Pagination from "../components/Pagination";
 
 function NewsCategory() {
   const { categoryId } = useParams();
@@ -30,6 +31,7 @@ function NewsCategory() {
       <Container className="my-5">
         <h1 className="mb-5 pt-3">{title}</h1>
         <NewsCardList newsList={adaptedNewsList} />
+        <Pagination categoryId={categoryId} />
       </Container>
     </Layout>
   );

@@ -4,7 +4,7 @@ export function getNewsList(apiResponse) {
   }
 
   const rawNewsList = apiResponse.response.results;
-  const adaptedNewsList = rawNewsList.map((news) => {
+  const adaptedNewsList = rawNewsList.map(news => {
     return {
       id: news.id,
       thumbnail: news.fields.thumbnail,
@@ -29,6 +29,7 @@ export function getNewsDetails(apiResponse) {
     image: rawNewsDetails.fields.main,
     content: rawNewsDetails.fields.body,
     author: rawNewsDetails.fields.byline,
+    thumbnail: rawNewsDetails.fields.thumbnail,
   };
 
   return adaptedNewsDetails;
