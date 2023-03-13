@@ -1,7 +1,5 @@
 export const initialState = {
-  newsList: [
-   
-  ],
+  newsList: [],
 };
 
 export function favouritesReducer(state, action) {
@@ -11,9 +9,6 @@ export function favouritesReducer(state, action) {
     case "ADD_TO_FAVOURITES": {
       let addedNews = action.payload;
       let previousNewsList = state.newsList;
-      //   if (!previousNewsList.includes(addedNews)) {
-      //     previousNewsList.push(addedNews);
-      //   }
       const found = previousNewsList.find(
         element => element.id === addedNews.id
       );
