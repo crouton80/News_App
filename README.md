@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+In this project I mainly used React, React-Bootstrap, a State Management library (React Context) and React-Router
 ## Available Scripts
 
 In the project directory, you can run:
