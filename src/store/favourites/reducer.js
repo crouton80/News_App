@@ -1,12 +1,6 @@
 export const initialState = {
   newsList: [
-    {
-      id: "",
-      title: "",
-      description: "",
-      thumbnail:
-        "",
-    },
+   
   ],
 };
 
