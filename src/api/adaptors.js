@@ -37,7 +37,6 @@ export function getNewsDetails(apiResponse) {
     content: rawNewsDetails.fields.body,
     author: rawNewsDetails.fields.byline,
     thumbnail: rawNewsDetails.fields.thumbnail,
-    thumbnail: rawNewsDetails.fields.thumbnail,
   };
 
   // Returnam datele adaptate

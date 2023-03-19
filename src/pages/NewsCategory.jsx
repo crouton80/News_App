@@ -7,7 +7,6 @@ import { getNewsCategoriesEndpoint } from "../api/endpoints";
 import { getNewsList } from "../api/adaptors";
 import NewsCardList from "../components/NewsCardList";
 import Pagination from "../components/Pagination";
-import Pagination from "../components/Pagination";
 
 function NewsCategory() {
   // Extragem paramtrul venit din URL.
