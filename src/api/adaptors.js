@@ -7,7 +7,7 @@ export function getNewsList(apiResponse) {
   // Extragem datele din raspunsul api-ului.
   const rawNewsList = apiResponse.response.results;
   // Mapam prin date si le transformam in formatul de care noi avem nevoie.
-  const adaptedNewsList = rawNewsList.map((news) => {
+  const adaptedNewsList = rawNewsList.map(news => {
     return {
       id: news.id,
       thumbnail: news.fields.thumbnail,
@@ -36,6 +36,7 @@ export function getNewsDetails(apiResponse) {
     image: rawNewsDetails.fields.main,
     content: rawNewsDetails.fields.body,
     author: rawNewsDetails.fields.byline,
+    thumbnail: rawNewsDetails.fields.thumbnail,
     thumbnail: rawNewsDetails.fields.thumbnail,
   };
 
