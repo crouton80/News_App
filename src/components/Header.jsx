@@ -7,7 +7,7 @@ function Header() {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
   function handleMenuClick() {
-    setIsDisplayed((prevIsDisplayed) => !prevIsDisplayed);
+    setIsDisplayed(prevIsDisplayed => !prevIsDisplayed);
   }
 
   let dropdownMenuClasses = styles.dropdownMenu;
@@ -48,6 +48,14 @@ function Header() {
                   className="p-3 text-uppercase text-light"
                 >
                   Fotbal
+                </Link>
+              </li>
+              <li className={isDisplayed ? "container" : null}>
+                <Link
+                  to="/category/science"
+                  className="p-3 text-uppercase text-light"
+                >
+                  Science
                 </Link>
               </li>
               <li className={isDisplayed ? "container" : null}>

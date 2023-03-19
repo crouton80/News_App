@@ -32,3 +32,8 @@
   width: 100%;
   aspect-ratio: 16 / 9;
 }
+
+.alert {
+  position: fixed;
+  align-self: center;
+}

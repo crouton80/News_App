@@ -11,15 +11,32 @@ function Home() {
   // Generam endpoint-urile pentru categoriile de stiri.
   const technologyNewsEndpoint = getNewsCategoriesEndpoint("technology", 1, 6);
   const footballNewsEndpoint = getNewsCategoriesEndpoint("football", 1, 6);
+  const scienceNewsEndpoint = getNewsCategoriesEndpoint("science", 1, 6);
   // Fetch-uim datele de la The Guardian.
   let technologyData = useFetch(technologyNewsEndpoint);
   let footballData = useFetch(footballNewsEndpoint);
+  let scienceData = useFetch(scienceNewsEndpoint);
   // Adaptam datele de la server la datele necesare componentelor de react.
   const adaptedTechnologyData = getNewsList(technologyData);
   const adaptedFootballData = getNewsList(footballData);
+  const adaptedScienceData = getNewsList(scienceData);
 
   return (
     <Layout>
+      <section className="science my-5">
+        <Container>
+          <h1 className="mb-5 pt-3">Science</h1>
+          {/* Afisam stirile despre stiinta. */}
+          <NewsCardList newsList={adaptedScienceData} />
+          <p>
+            Vezi toate știrile legate de stiinta în secțiunea{" "}
+            <Link to="/category/science" className="text-secondary">
+              Science
+            </Link>
+            .
+          </p>
+        </Container>
+      </section>
       <section className="tech my-5">
         <Container>
           <h1 className="mb-5 pt-3">Tech</h1>
