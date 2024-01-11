@@ -1,6 +1,6 @@
 ##Live Preview Project has been deployed at https://itschool-news-app.netlify.app/
 
-Concepts Used
+
 In this project I used the following concepts:
 
 Routing
